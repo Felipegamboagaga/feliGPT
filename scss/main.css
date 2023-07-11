@@ -1,0 +1,318 @@
+nav .logo {
+  height: 3vh;
+}
+
+.containerGPT {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 96vh;
+}
+.containerGPT .input {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: space-around;
+  justify-content: space-around;
+  border: 4px solid beige;
+  border-radius: 35px;
+  height: 50vh;
+  width: 40%;
+  color: white;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .containerGPT .input h3 {
+    font-size: 12px !important;
+  }
+}
+.containerGPT .output {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: normal;
+  justify-content: center;
+  padding-top: 80px;
+  border: 4px solid beige;
+  border-radius: 35px;
+  color: white;
+  height: 50vh;
+  width: 40%;
+}
+@media screen and (max-width: 800px) {
+  .containerGPT .output h3 {
+    font-size: 12px !important;
+  }
+}
+
+.banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 30vh;
+  border-radius: 20px;
+}
+.banner img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 50px;
+  border-radius: 50px;
+}
+
+.Texto-QS {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-top: 150px;
+}
+.Texto-QS .Intro-EMP {
+  width: 1500px;
+}
+@media screen and (max-width: 900px) {
+  .Texto-QS h5 {
+    font-size: 12px;
+  }
+}
+
+.Bloque-QS {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  border: 2px solid blue;
+  border-radius: 20px;
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+}
+.Bloque-QS h2 {
+  color: aliceblue;
+}
+
+.Tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 47vh;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 150px;
+}
+@media screen and (max-width: 700px) {
+  .Tarjetas .card-text {
+    font-size: 10px !important;
+  }
+  .Tarjetas .card-title {
+    font-size: 12px !important;
+  }
+  .Tarjetas .card {
+    height: 430px !important;
+    margin-top: 10px;
+  }
+}
+
+.texto-Ubi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.texto-Ubi p {
+  font-size: 20px;
+}
+.texto-Ubi h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .Tarjetas {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+h1 {
+  margin: 40px;
+}
+
+a {
+  color: #162938;
+  text-decoration: none;
+}
+
+.rememberforgot a:hover {
+  text-decoration: underline;
+}
+
+.login-reg a:hover {
+  text-decoration: underline;
+}
+
+.loginbod {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+}
+.loginbod .wrapper {
+  position: relative;
+  width: 400px;
+  height: 440px;
+  background: linear-gradient(45deg, blue, red);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginbod .wrapper .loginbox {
+  width: 100%;
+  padding: 40px;
+}
+.loginbod .wrapper .loginbox h2 {
+  font-size: 2em;
+  text-align: center;
+  color: black;
+}
+.loginbod .wrapper .loginbox .input-box input:focus ~ label,
+.loginbod .wrapper .loginbox .input-box input:valid ~ label {
+  top: -5px;
+}
+.loginbod .wrapper .loginbox .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid gray;
+  margin: 30px 0;
+}
+.loginbod .wrapper .loginbox .input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.loginbod .wrapper .loginbox .input-box input {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 600;
+}
+.loginbod .wrapper .loginbox .input-box .icon {
+  position: absolute;
+  right: 5px;
+  line-height: 57px;
+  font-size: 1.2em;
+}
+.loginbod .wrapper .loginbox .rememberforgot {
+  font-size: 0.9em;
+  color: #162938;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.loginbod .wrapper .loginbox .rememberforgot label input {
+  accent-color: #162938;
+  margin-right: 3px;
+}
+.loginbod .wrapper .botonLogin {
+  width: 100%;
+  height: 45px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+}
+.loginbod .wrapper .login-reg {
+  font-size: 0.9em;
+  color: #162938;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.indexbody {
+  background-image: url("../IMG/Background.png");
+  background-size: cover;
+  background-repeat: repeat-y;
+}
+
+.centro {
+  height: 96vh;
+}
+
+.Textos {
+  background-color: transparent;
+}
+.Textos h2,
+.Textos h3 {
+  color: rgb(184, 179, 189);
+}
+.Textos h6 {
+  color: rgb(184, 179, 189);
+  font-size: 12px;
+}
+.Textos h1 {
+  font-size: 40px;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .Textos h1 {
+    font-size: 80px;
+    padding: 20px;
+  }
+  .Textos h6 {
+    color: rgb(184, 179, 189);
+    font-size: 20px;
+  }
+  .Textos h2,
+  .Textos h3 {
+    color: rgb(184, 179, 189);
+  }
+  .Textos .centro {
+    height: 100vh;
+  }
+}
+
+.hidden {
+  color: transparent !important;
+}
+
+.height-fill {
+  height: 100%;
+}
+
+img {
+  height: 100%;
+}
+
+.IMG {
+  height: 90%;
+}
+
+nav .nav-item :hover {
+  font-size: large;
+  text-decoration: underline;
+  transition: all 0.05s linear;
+}/*# sourceMappingURL=main.css.map */

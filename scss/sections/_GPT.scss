@@ -1,0 +1,54 @@
+.containerGPT {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 96vh;
+
+
+    .input {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: space-around;
+        justify-content: space-around;
+        border: 4px solid beige;
+        border-radius: 35px;
+        height: 50vh;
+        width: 40%;
+        color: white;
+        align-items: center;
+
+        @media screen and (max-width: 800px) {
+            h3 {
+                font-size: 12px !important;
+            }
+        }
+    }
+
+    .output {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: normal;
+        justify-content: center;
+        padding-top: 80px;
+        border: 4px solid beige;
+        border-radius: 35px;
+        color: white;
+        height: 50vh;
+        width: 40%;
+
+        @media screen and (max-width: 800px) {
+            h3 {
+                font-size: 12px !important;
+            }
+        }
+
+    }
+
+
+
+
+}

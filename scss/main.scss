@@ -1,0 +1,92 @@
+@import "./sections/nav.scss", "./sections/GPT.scss", "./sections/QS.scss", "./sections/ubicacion", "./sections/FQ.scss", "./sections/login.scss" ;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.indexbody {
+    background-image: url("../IMG/Background.png");
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+.centro {
+    height: 96vh;
+
+}
+
+.Textos {
+    background-color: transparent;
+
+    h2,
+    h3 {
+        color: rgb(184, 179, 189);
+    }
+
+    h6 {
+        color: rgb(184, 179, 189);
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 40px;
+        padding: 10px;
+    }
+
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 80px;
+            padding: 20px;
+        }
+
+        h6 {
+            color: rgb(184, 179, 189);
+            font-size: 20px;
+        }
+
+        h2,
+        h3 {
+            color: rgb(184, 179, 189);
+        }
+
+        .centro {
+            height: 100vh;
+
+        }
+
+
+    }
+}
+
+.hidden {
+    color: transparent !important;
+    ;
+}
+
+.height-fill {
+    height: 100%
+}
+
+img {
+    height: 100%;
+}
+
+.IMG {
+    height: 90%;
+
+}
+
+nav {
+    .nav-item {
+
+        :hover {
+            font-size: large;
+            text-decoration: underline;
+            transition: all .05s linear;
+
+
+        }
+    }
+}

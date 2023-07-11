@@ -1,0 +1,124 @@
+a {
+    color:#162938 ;
+    text-decoration: none;
+}
+.rememberforgot a:hover {
+    text-decoration: underline;
+}
+.login-reg a:hover {
+    text-decoration: underline;
+}
+
+
+.loginbod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+
+
+    .wrapper {
+        position: relative;
+        width: 400px;
+        height: 440px;
+        background: linear-gradient(45deg, blue, red);
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        backdrop-filter: blur(3px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+
+
+        .loginbox {
+            h2 {
+                font-size: 2em;
+                text-align: center;
+                color: black;
+            }
+
+            width: 100%;
+            padding: 40px;
+
+            .input-box input:focus~label,
+            .input-box input:valid~label {
+                top: -5px;
+            }
+
+            .input-box {
+                position: relative;
+                width: 100%;
+                height: 50px;
+                border-bottom: 2px solid gray;
+                margin: 30px 0;
+
+                label {
+                    position: absolute;
+                    top: 50%;
+                    left: 5px;
+                    transform: translateY(-50%);
+                    font-weight: 500;
+                    pointer-events: none;
+                    transition: .5s;
+
+                }
+
+                input {
+                    background: transparent;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    font-size: 1em;
+                    font-weight: 600;
+
+
+                }
+
+                .icon {
+                    position: absolute;
+                    right: 5px;
+                    line-height: 57px;
+                    font-size: 1.2em;
+                }
+
+               
+
+
+            } .rememberforgot {
+                font-size: .9em;
+                color: #162938;
+                font-weight: 500;
+                margin: -15px 0 15px;
+                display: flex;
+                justify-content: space-between;
+               label input{
+                accent-color:#162938 ;
+                margin-right: 3px;
+               }
+
+
+            }
+        }
+        .botonLogin{
+            width: 100%;
+            height: 45px;
+            background: #162938;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .login-reg{
+            font-size: .9em;
+            color: #162938;
+            text-align: center;
+            font-weight: 500;
+            margin: 25px 0 10px;
+        }
+    }
+}

@@ -1,0 +1,167 @@
+nav .logo {
+  height: 3vh; }
+
+.containerGPT {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 96vh; }
+  .containerGPT .input {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-around;
+    justify-content: space-around;
+    border: 4px solid beige;
+    border-radius: 35px;
+    height: 50vh;
+    width: 40%;
+    color: white;
+    align-items: center; }
+    @media screen and (max-width: 800px) {
+      .containerGPT .input h3 {
+        font-size: 12px !important; } }
+  .containerGPT .output {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: normal;
+    justify-content: center;
+    padding-top: 80px;
+    border: 4px solid beige;
+    border-radius: 35px;
+    color: white;
+    height: 50vh;
+    width: 40%; }
+    @media screen and (max-width: 800px) {
+      .containerGPT .output h3 {
+        font-size: 12px !important; } }
+
+.banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 30vh;
+  border-radius: 20px; }
+  .banner img {
+    width: 100%;
+    object-fit: cover;
+    margin-top: 50px;
+    border-radius: 50px; }
+
+.Texto-QS {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  margin-top: 150px; }
+  .Texto-QS .Intro-EMP {
+    width: 1500px; }
+  @media screen and (max-width: 900px) {
+    .Texto-QS h5 {
+      font-size: 12px; } }
+
+.Bloque-QS {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  border: 2px solid blue;
+  border-radius: 20px;
+  background-color: blue;
+  height: 200px;
+  width: 200px; }
+  .Bloque-QS h2 {
+    color: aliceblue; }
+
+.Tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 47vh;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 150px; }
+  @media screen and (max-width: 700px) {
+    .Tarjetas .card-text {
+      font-size: 10px !important; }
+    .Tarjetas .card-title {
+      font-size: 12px !important; }
+    .Tarjetas .card {
+      height: 430px !important;
+      margin-top: 10px; } }
+
+.texto-Ubi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px; }
+  .texto-Ubi p {
+    font-size: 20px; }
+  .texto-Ubi h1 {
+    font-size: 55px;
+    margin-bottom: 20px; }
+
+@media screen and (max-width: 700px) {
+  .Tarjetas {
+    margin-left: 5%;
+    margin-right: 5%; } }
+
+h1 {
+  margin: 40px; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-image: url("../IMG/Background.png");
+  background-size: cover;
+  background-repeat: repeat-y; }
+
+.centro {
+  height: 96vh; }
+
+.Textos {
+  background-color: transparent; }
+  .Textos h2,
+  .Textos h3 {
+    color: #b8b3bd; }
+  .Textos h6 {
+    color: #b8b3bd;
+    font-size: 12px; }
+  .Textos h1 {
+    font-size: 40px;
+    padding: 10px; }
+  @media (min-width: 768px) {
+    .Textos h1 {
+      font-size: 80px;
+      padding: 20px; }
+    .Textos h6 {
+      color: #b8b3bd;
+      font-size: 20px; }
+    .Textos h2,
+    .Textos h3 {
+      color: #b8b3bd; }
+    .Textos .centro {
+      height: 100vh; } }
+
+.hidden {
+  color: transparent !important; }
+
+.height-fill {
+  height: 100%; }
+
+img {
+  height: 100%; }
+
+.IMG {
+  height: 90%; }
+
+nav .nav-item :hover {
+  font-size: large;
+  text-decoration: underline;
+  transition: all .05s linear; }

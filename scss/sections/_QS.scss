@@ -1,0 +1,54 @@
+.banner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 30vh;
+    border-radius: 20px;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        margin-top: 50px;
+        border-radius: 50px;
+    }
+
+}
+
+.Texto-QS {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-top: 150px;
+
+    .Intro-EMP {
+        width: 1500px;
+    }
+
+    @media screen and (max-width: 900px) {
+        h5 {
+            font-size: 12px;
+        }
+    }
+}
+
+.Bloque-QS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    border: 2px solid blue;
+    border-radius: 20px;
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+
+    h2 {
+        color: aliceblue;
+
+
+    }
+
+
+}
