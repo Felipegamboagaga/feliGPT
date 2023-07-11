@@ -41,7 +41,20 @@ Loglink.addEventListener('click',()=>{
 })
 
 btnlog.addEventListener('click',()=>{
-    console.log(document.getElementById('mail').value)
+    loginmail = document.getElementById('mail').value
+    loginpass = document.getElementById('pass').value
+    credentials = JSON.parse(localStorage.getItem(loginmail))
+    console.log(credentials.password , credentials.email , loginpass, loginmail)
+    if (credentials.password === loginpass && credentials.email === loginmail){
+        document.getElementById('textosuperiorLOG').innerHTML = "Hola" +'   '+ credentials.username + '!'
+
+    }
+    else 
+    {
+        document.getElementById('textosuperiorLOG').innerHTML = "wrong email or password"
+        
+    }
+    
 });
 btnreg.addEventListener('click',()=>{
     if (document.getElementById('username').value !== '' && document.getElementById('passreg').value !== '' && document.getElementById('mailreg').value !== '') {
