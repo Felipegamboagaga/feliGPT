@@ -172,28 +172,44 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: height 0.2s ease;
+  overflow: hidden;
+}
+.loginbod .wrapper .registerbox {
+  position: absolute;
+  transition: transform 0.5s ease;
+  transform: translateX(400px);
 }
 .loginbod .wrapper .loginbox {
+  transition: transform 0.5s ease;
+}
+.loginbod .wrapper .loginbox,
+.loginbod .wrapper .registerbox {
   width: 100%;
   padding: 40px;
 }
-.loginbod .wrapper .loginbox h2 {
+.loginbod .wrapper .loginbox h2,
+.loginbod .wrapper .registerbox h2 {
   font-size: 2em;
   text-align: center;
   color: black;
 }
 .loginbod .wrapper .loginbox .input-box input:focus ~ label,
-.loginbod .wrapper .loginbox .input-box input:valid ~ label {
+.loginbod .wrapper .loginbox .input-box input:valid ~ label,
+.loginbod .wrapper .registerbox .input-box input:focus ~ label,
+.loginbod .wrapper .registerbox .input-box input:valid ~ label {
   top: -5px;
 }
-.loginbod .wrapper .loginbox .input-box {
+.loginbod .wrapper .loginbox .input-box,
+.loginbod .wrapper .registerbox .input-box {
   position: relative;
   width: 100%;
   height: 50px;
   border-bottom: 2px solid gray;
   margin: 30px 0;
 }
-.loginbod .wrapper .loginbox .input-box label {
+.loginbod .wrapper .loginbox .input-box label,
+.loginbod .wrapper .registerbox .input-box label {
   position: absolute;
   top: 50%;
   left: 5px;
@@ -202,7 +218,8 @@ a {
   pointer-events: none;
   transition: 0.5s;
 }
-.loginbod .wrapper .loginbox .input-box input {
+.loginbod .wrapper .loginbox .input-box input,
+.loginbod .wrapper .registerbox .input-box input {
   background: transparent;
   width: 100%;
   height: 100%;
@@ -211,13 +228,15 @@ a {
   font-size: 1em;
   font-weight: 600;
 }
-.loginbod .wrapper .loginbox .input-box .icon {
+.loginbod .wrapper .loginbox .input-box .icon,
+.loginbod .wrapper .registerbox .input-box .icon {
   position: absolute;
   right: 5px;
   line-height: 57px;
   font-size: 1.2em;
 }
-.loginbod .wrapper .loginbox .rememberforgot {
+.loginbod .wrapper .loginbox .rememberforgot,
+.loginbod .wrapper .registerbox .rememberforgot {
   font-size: 0.9em;
   color: #162938;
   font-weight: 500;
@@ -225,7 +244,8 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.loginbod .wrapper .loginbox .rememberforgot label input {
+.loginbod .wrapper .loginbox .rememberforgot label input,
+.loginbod .wrapper .registerbox .rememberforgot label input {
   accent-color: #162938;
   margin-right: 3px;
 }

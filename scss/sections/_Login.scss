@@ -1,10 +1,12 @@
 a {
-    color:#162938 ;
+    color: #162938;
     text-decoration: none;
 }
+
 .rememberforgot a:hover {
     text-decoration: underline;
 }
+
 .login-reg a:hover {
     text-decoration: underline;
 }
@@ -18,6 +20,8 @@ a {
     background-size: cover;
 
 
+
+
     .wrapper {
         position: relative;
         width: 400px;
@@ -29,11 +33,31 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: height .2s ease;
+        overflow: hidden;
 
 
 
 
-        .loginbox {
+
+
+
+        .registerbox {
+            position: absolute;
+            transition: transform .5s ease;
+            transform: translateX(400px);
+        }
+        .loginbox{
+            transition: transform .5s ease;
+        }
+
+
+
+
+
+        .loginbox,
+        .registerbox {
+            
             h2 {
                 font-size: 2em;
                 text-align: center;
@@ -85,25 +109,29 @@ a {
                     font-size: 1.2em;
                 }
 
-               
 
 
-            } .rememberforgot {
+
+            }
+
+            .rememberforgot {
                 font-size: .9em;
                 color: #162938;
                 font-weight: 500;
                 margin: -15px 0 15px;
                 display: flex;
                 justify-content: space-between;
-               label input{
-                accent-color:#162938 ;
-                margin-right: 3px;
-               }
+
+                label input {
+                    accent-color: #162938;
+                    margin-right: 3px;
+                }
 
 
             }
         }
-        .botonLogin{
+
+        .botonLogin {
             width: 100%;
             height: 45px;
             background: #162938;
@@ -113,7 +141,8 @@ a {
             cursor: pointer;
             color: #fff;
         }
-        .login-reg{
+
+        .login-reg {
             font-size: .9em;
             color: #162938;
             text-align: center;
