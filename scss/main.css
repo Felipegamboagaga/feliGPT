@@ -165,11 +165,11 @@ a {
   position: relative;
   width: 400px;
   height: 440px;
-  background: linear-gradient(45deg, blue, red);
+  background: transparent;
+  -webkit-backdrop-filter: saturate(200%);
+          backdrop-filter: saturate(200%);
   border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 20px;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
   display: flex;
   justify-content: center;
   align-items: center;
